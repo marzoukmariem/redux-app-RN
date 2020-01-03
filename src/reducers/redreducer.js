@@ -1,4 +1,4 @@
-
+// INCREASE the COUNTER of RED SCREEN
 const redreducer = (state ={numred:0}, action) => {
     switch (action.type) {
         case 'INCREASE_COUNTER_RED':

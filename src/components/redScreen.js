@@ -4,6 +4,8 @@ import { createStackNavigator } from 'react-navigation-stack'
 import { connect } from 'react-redux'
 import { createStore } from 'redux'
  class redScreen extends Component {
+
+  // function allows to navigate to the green screen and increase the number of launching green screen
     pressfunction() {
         
         this.props.navigation.navigate('green');

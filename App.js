@@ -11,13 +11,14 @@ import green from './src/components/greenScreen';
 import red from './src/components/redScreen';
 
 
-
+// combinereducers
 const reducer = combineReducers({
   countergreen: counterReducer1,
   counterred: counterReducer2
 })
 
 
+//create store
 const store = createStore(reducer)
 
 export default class App extends React.Component {
@@ -27,6 +28,7 @@ export default class App extends React.Component {
   }
 
 
+  //disable back button 
   componentDidMount() {
     BackHandler.addEventListener('hardwareBackPress', this.onBackButtonPressed);
   }
@@ -42,7 +44,7 @@ export default class App extends React.Component {
 
 }
 
-
+//navigation bar config
 const AppNavigator = createStackNavigator({
   green: { screen: green },
   red: { screen: red ,
