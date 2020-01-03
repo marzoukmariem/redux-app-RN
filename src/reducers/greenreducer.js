@@ -1,4 +1,4 @@
-
+// INCREASE the COUNTER of GREEN SCREEN
 const greenreducer = (state = {numgreen:1}, action) => {
     switch (action.type) {
         case 'INCREASE_COUNTER_GREEN':
